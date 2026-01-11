@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tapan Ray - Portfolio</title>
+    <script src="https://kit.fontawesome.com/3bd06ce265.js" crossorigin="anonymous"></script>
+
+    <!----------EmailJS--------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "2xbK5fXwVU7-1Z21T",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo-container">
+                    <span class="logo-text">TR</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Experience</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text reveal-up">
+                <h1>Hi, I'm <span class="highlight">Tapan Ray</span></h1>
+                <div class="text-animation">
+                    <span>I'm a </span><span class="typed-text"></span><span class="typed-cursor">|</span>
+                </div>
+                <br>
+
+                <p class="header-subtitle">Software Engineer | Full Stack Developer</p>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 reveal-left">
+                    <img src="images/phone-background.png" alt="Tapan Ray">
+                </div>
+                <div class="about-col-2 reveal-right">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am Tapan Ray, currently working as a Software Engineer at LTIMindtree, with expertise in
+                        <em>.NET Development</em> and hands-on experience in <b><em>MERN Stack Development</em></b>. I
+                        specialize in building scalable, reliable, and high-performance applications.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            <i class="fas fa-code"></i>
+                            <span>Skills</span>
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experience</span>
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education</span>
+                        </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-item">
+                            <h4>.NET Development</h4>
+                            <p>Work in Backend and Data Layer</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>MERN Development</h4>
+                            <p>Web app Development using MERN</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Java Development</h4>
+                            <p>Web app Development using JAVA</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <div class="timeline-item" >
+                            <span class="timeline-date">FEB 2025 - Current</span>
+                            <h4>Software Developer</h4>
+                            <p><b>LTI Mindtree</b></p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">AUG 2023 - APR 2024</span>
+                            <h4>Research & Development Intern</h4>
+                            <p><b>Nokia Network & Solutions</b></p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">APR 2023 - JUN 2023</span>
+                            <h4>React Development Intern</h4>
+                            <p><b>Celebal Technologies</b></p>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <div class="education-item">
+                            <span class="education-year">2024</span>
+                            <h4>MCA</h4>
+                            <p>KIIT Bhubaneswar</p>
+                        </div>
+                        <div class="education-item">
+                            <span class="education-year">2022</span>
+                            <h4>BSC Computer Science</h4>
+                            <p>Khalikote University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title reveal-up">My Experience</h1>
+            <div class="services-list">
+                <div class="service-card reveal-up">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Dotnet Development</h2>
+                    <p>I gained hands-on experience as a .NET Full Stack Developer, working across backend, frontend,
+                        and database layers. I developed RESTful APIs using ASP.NET Core Web API with clean architecture
+                        principles, implemented JWT-based authentication, validations, logging, and exception handling,
+                        and designed normalized SQL Server databases using Entity Framework Core and LINQ. On the
+                        frontend, I built responsive Angular applications using components, routing, guards, and
+                        reactive forms, enhanced with Angular Material, animations, and SweetAlert2. I also developed a
+                        full-stack Mentorship Management System, delivering complete end-to-end functionality and
+                        real-world application workflows.</p>
+                    <h1><a href="https://dotnet-experience.netlify.app/" target="_blank" rel="noopener">
+                        Learn more <span class="arrow">→</span>
+                    </a></h1>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h2>Educator</h2>
+                    <p>I am a Software Engineer and Full Stack Developer with a strong academic foundation and hands-on
+                        industry experience across enterprise applications. I specialize in teaching backend development
+                        using the .NET ecosystem, frontend engineering with Angular and React, database design with SQL
+                        Server, and full stack application architecture. With professional experience at LTIMindtree,
+                        Nokia Solutions and Networks, and Celebal Technologies, I bridge academic concepts with
+                        real-world
+                        implementation. My teaching approach emphasizes clean code practices, practical learning, and
+                        industry relevance, enabling students and professionals to build scalable, production-ready
+                        applications and grow into confident, job-ready software engineers.</p>
+                    <a href="https://me-as-educator.netlify.app/" target="_blank" rel="noopener">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title reveal-up">My Work</h1>
+            <div class="work-list">
+                <div class="work reveal-up">
+                    <img src="images/work-1.png" alt="Music Player">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>A dopamine-boosting music player, designed to elevate your mood with vibrant visuals</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work reveal-up">
+                    <img src="images/work-2.png" alt="Quiz App">
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>A quiz app designed for last-minute exam preparation, offering quick overview on OOPS key
+                            topics</p>
+                        <a href="https://quick-revision-oops.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work reveal-up">
+                    <img src="images/work-3.png" alt="QR Database">
+                    <div class="layer">
+                        <h3>QR Database</h3>
+                        <p>A database where you can store your data and retrieve it just by scanning the QR code
+                            generated by the app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta reveal-up">
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left reveal-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fa-solid fa-envelope"></i>arceus0810@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9937879736</p>
+
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/_c_y_p_h_3_r_/" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/tapan-ray-009560242" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/tapan0810/Tapan._Portfolio._" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                    <a href="images/Tapan_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right reveal-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                        <textarea name="message" id="contact-msg" rows="6" placeholder="Your Message"
+                            required></textarea>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="btn btn2" id="submit-btn">
+                            <span class="btn-text">Submit</span>
+                            <span class="spinner"></span>
+                        </button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Made with ❤️ by Tapan Ray</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+
+
+
+    <script src="index.js"></script>
+    <div id="toast"></div>
+
+</body>
+
+</html>
